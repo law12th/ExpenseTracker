@@ -7,7 +7,7 @@ namespace ExpenseTracker.Models {
         public int Id { get; set; }
 
         [Required]
-        [StringLength(60, ErrorMessage = "Name cannot be longer than 60 characters.")]
+        [StringLength(maximumLength: 60, ErrorMessage = "Name cannot be longer than 60 characters.")]
         public string Name { get; set; }
     }
 }
